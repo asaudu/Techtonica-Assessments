@@ -19,6 +19,10 @@ app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, '/404.html'));
 });
 
+// app.use(function(req, res) {
+//     res.status(404).render('/404.html');
+// });
+
 app.listen(port, function() {
     console.log(`Listening on port ${port}`)
 });
